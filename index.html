@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Upload Pictures on Trinket</title>
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            color: #4a6baf;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #4a6baf;
+            border-bottom: 2px solid #e0e6f5;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        
+        .step {
+            background: #f8faff;
+            border-left: 4px solid #4a6baf;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            background: #eef2ff;
+            transform: translateX(5px);
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #4a6baf;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .code {
+            background: #2d3748;
+            color: #f8fafc;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        .tips {
+            background: #fff9e6;
+            border-left: 4px solid #ffd700;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        
+        .tips-title {
+            color: #b8860b;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tips-title:before {
+            content: "💡";
+            margin-right: 8px;
+        }
+        
+        .image-placeholder {
+            background: #e2e8f0;
+            border: 2px dashed #94a3b8;
+            border-radius: 8px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .note {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 10px 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Upload Pictures on Trinket</h1>
+        
+        <p>Follow these simple steps to add pictures to your Trinket projects:</p>
+        
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Open Trinket and Your Project</strong>
+            <p>Go to <a href="https://trinket.io" target="_blank">trinket.io</a> and open your coding project.</p>
+            <div class="image-placeholder"><img src="trinket.io.png" class="image-placeholder" style="width:300px;"/></div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Find the File Upload Button</strong>
+            <p>On the left side panel where your files are listed, look for:</p>
+            <ul>
+                <li>A plus (+) icon</li>
+                <li>An "Upload" button</li>
+                <li>"Add files" option</li>
+                <li>A folder icon</li>
+            </ul>
+            <div class="image-placeholder"><img src="plus button.png" class="image-placeholder" style="width:300px;"/></div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Click the Upload Button</strong>
+            <p>When you click it, a file selection window will appear from your computer.</p>
+            <div class="image-placeholder"><img src="save-btn.png" class="image-placeholder" style="width:300px;"/></div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>Select Your Picture(s)</strong>
+            <p>Browse your computer to find the image file you want to upload (photos, drawings, etc.).</p>
+            <p>Select the file and click "Open" or "Choose".</p>
+            <div class="note">
+                Supported formats: .png, .jpg, .gif (max few MB)
+            </div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">5</span>
+            <strong>See Your Picture in Trinket</strong>
+            <p>Your uploaded image will appear in Trinket's file list.</p>
+            <div class="image-placeholder"><img src="image-uipload-btn.png" class="image-placeholder" style="width:700px;"/></div>
+        </div>
+        
+        <div class="step">
+            <span class="step-number">6</span>
+            <strong>Use the Picture in Your Code</strong>
+            <p>Reference your image file in code. For example, in HTML:</p>
+            <div class="code">
+                &lt;img src="myphoto.png" alt="My Picture"&gt;
+            </div>
+            <p>Or in Python with Turtle:</p>
+            <div class="code">
+                screen.addshape("myphoto.png")
+                turtle.shape("myphoto.png")
+            </div>
+        </div>
+        
+        <div class="tips">
+            <div class="tips-title">Extra Tips for Success</div>
+            <ul>
+                <li>Use small image files (under 1MB works best)</li>
+                <li>Common formats like PNG and JPG are most reliable</li>
+                <li>Double-check your filename spelling in code</li>
+                <li>Ask for help if you get stuck!</li>
+            </ul>
+        </div>
+        
+        <h2>Example Code Using Uploaded Images</h2>
+        
+        <p>HTML example showing an uploaded picture:</p>
+        <div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Picture&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Look at my uploaded picture!&lt;/h1&gt;
+    &lt;img src="myphoto.jpg" alt="My awesome photo" width="400"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </div>
+        
+        <p>Python Turtle example with an uploaded image:</p>
+        <div class="code">
+import turtle
+
+screen = turtle.Screen()
+screen.addshape("mydrawing.png")
+
+t = turtle.Turtle()
+t.shape("mydrawing.png")
+t.penup()
+t.goto(0, 100)
+        </div>
+    </div>
+</body>
+</html>
